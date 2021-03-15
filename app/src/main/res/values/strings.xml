@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">body mass index calculator</string>
+    <string name="very_severely_underweight">very_severely_underweight</string>
+    <string name="severely_underweight">severely_underweight</string>
+    <string name="underweight">underweight</string>
+    <string name="normal">normal</string>
+    <string name="overweight">overweight</string>
+    <string name="obese_class">normal</string>
+</resources>
