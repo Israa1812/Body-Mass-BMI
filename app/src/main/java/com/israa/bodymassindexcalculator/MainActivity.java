@@ -39,18 +39,12 @@ public class MainActivity extends AppCompatActivity {
     private void BMI(float bmi) {
         String bmiLabel = "";
 
-        if (Float.compare(bmi, 15f) <= 0) {
-            bmiLabel = getString(R.string.very_severely_underweight);
-        } else if (Float.compare(bmi, 15f) > 0  &&  Float.compare(bmi, 16f) <= 0) {
-            bmiLabel = getString(R.string.severely_underweight);
-        } else if (Float.compare(bmi, 16f) > 0  &&  Float.compare(bmi, 18.5f) <= 0) {
+         if (Float.compare(bmi, 16f) > 0  &&  Float.compare(bmi, 18.5f) <= 0) {
             bmiLabel = getString(R.string.underweight);
         } else if (Float.compare(bmi, 18.5f) > 0  &&  Float.compare(bmi, 25f) <= 0) {
             bmiLabel = getString(R.string.normal);
-        } else if (Float.compare(bmi, 25f) > 0  &&  Float.compare(bmi, 30f) <= 0) {
+        } else  {
             bmiLabel = getString(R.string.overweight);
-       } else {
-            bmiLabel = getString(R.string.obese_class);
         }
 
         bmiLabel = bmi + "\n\n" + bmiLabel;
